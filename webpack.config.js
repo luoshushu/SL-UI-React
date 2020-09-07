@@ -1,4 +1,6 @@
 const  path = require('path')
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+
 module.exports={
   mode:'production', //生产模式
   // 入口
@@ -20,5 +22,11 @@ module.exports={
         loader:'awesome-typescript-loader'
       }
     ]
-  }
+  },
+  plugins:[
+    new HtmlWebpackPlugin({
+      title:'SLUI',
+      template:'index.html'
+    })
+  ]
 }

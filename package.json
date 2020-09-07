@@ -18,9 +18,11 @@
   },
   "homepage": "https://github.com/luoshushu/SL-UI-React#readme",
   "devDependencies": {
+    "html-webpack-plugin": "^4.4.1",
     "typescript": "^4.0.2",
     "webpack": "^4.44.1",
-    "webpack-cli": "^3.3.12"
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
   },
   "dependencies": {
     "awesome-typescript-loader": "^5.2.1"
