@@ -16,5 +16,13 @@
   "bugs": {
     "url": "https://github.com/luoshushu/SL-UI-React/issues"
   },
-  "homepage": "https://github.com/luoshushu/SL-UI-React#readme"
+  "homepage": "https://github.com/luoshushu/SL-UI-React#readme",
+  "devDependencies": {
+    "typescript": "^4.0.2",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  },
+  "dependencies": {
+    "awesome-typescript-loader": "^5.2.1"
+  }
 }
