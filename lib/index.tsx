@@ -1,1 +1,2 @@
-console.log('哈哈4444')
+import React from "react";
+import ReactDOM from "react-dom";
