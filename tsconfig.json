@@ -23,10 +23,12 @@
     "esModuleInterop": true,
     "noUnusedLocals": true
   },
+  // 编译文件
   "include": [
     "types/**/*",
     "lib/**/*"
   ],
+  // 排除编译的文件
   "exclude": [
     "node_modules",
     "build",
