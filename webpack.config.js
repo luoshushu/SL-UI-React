@@ -25,6 +25,14 @@ module.exports={
       {
         test:/\.svg$/,
         loader:'svg-sprite-loader'
+      },
+      {
+        test:/\.s([ac]ss$)/,
+        use:[
+          'style-loader', // 第三步：把css变成style标签 如： <style> //这里是xxx.css解析后的对象内容 </style>
+          'css-loader',   // 第二步：把xxx.css变成对象，对象中是css字符串
+          'sass-loader'   // 第一步：加载xxx.scss文件变成xxx.css（内容为字符串） 
+      ]
       }
     ]
   },
