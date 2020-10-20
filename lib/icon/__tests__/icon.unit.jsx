@@ -9,7 +9,6 @@ describe('Icon', () => {
         expect(json).toMatchSnapshot()
     })
     it('onClick点击事件', () => {
-
         const fn = jest.fn()
         const c = mount(<Icon name="alipay" onClick={fn} />)
         c.find('svg').simulate('click') 
