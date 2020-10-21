@@ -11,7 +11,7 @@ jobs:
       - checkout
       - restore_cache:
           keys:
-            - v2-dependencies-{{ checksum "package.json" }}
+            - v2-dependencies-{{ checksum "package.json" }}  # 创建缓存 以这个作为key package 没变就可以使用之后的node_modules
       - run: yarn install
       - save_cache:
           paths:

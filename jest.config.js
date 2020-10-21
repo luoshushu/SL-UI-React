@@ -3,12 +3,9 @@
 module.exports = {
   verbose: true,
   clearMocks: false,
-  collectCoverage: true, //是否收集测试覆盖率
-  // reporters: ["default","jest-junit"],
   reporters: ["default"],
-  collectCoverageFrom:["{lib,include}/**/*.{ts,tsx}","!**/node_modules/**"], //测试lib下的所有ts tsx文件（不包含__test__），不测试node_modules
-  coverageDirectory:"coverage",//生成的报告放在coverage里面
-  coverageReporters:["text",'lcov'],
+
+  collectCoverage: false,
 
   moduleFileExtensions: ['js', 'jsx', 'ts', 'tsx'],
   moduleDirectories: ['node_modules'],
