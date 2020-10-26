@@ -5,7 +5,7 @@ exports[`Icon 是个 svg 1`] = `
   className="sl-icon"
 >
   <use
-    xlinkHref="#undefined"
+    xlinkHref="#alipay"
   />
 </svg>
 `;
