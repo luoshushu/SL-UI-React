@@ -65,8 +65,9 @@ workflows:
       - publish:
           requires:
             - build
-          # filters:  #按条件发布 打tags
-          #   tags:
-          #     only: /^v[0-9]+(\.[0-9]+)*/
-          #   branches:
-          #     ignore: /.*/  #所有分支都不部署只认tags 
+          filters:  #按条件发布 打tags
+            tags:
+              # only: /^v[0-9]+(\.[0-9]+)*/
+              only: /^v.*/
+            branches:
+              ignore: /.*/  #所有分支都不部署只认tags 
