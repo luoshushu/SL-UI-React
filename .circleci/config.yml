@@ -49,7 +49,7 @@ jobs:
     steps:
       - attach_workspace:
           at: .
-      - run: npm config set //registry.npmjs.org/:_authToken $NPM_TOKEN
+      - run: npm config set //registry.npmjs.org/:_authToken $NPM_TOKEN #对应ci上设置的环境变量
       - run: npm publish
 workflows:
   version: 2
