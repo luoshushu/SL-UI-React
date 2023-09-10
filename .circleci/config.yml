@@ -49,7 +49,7 @@ jobs:
     steps:
       - attach_workspace:
           at: .
-      - run: npm config set //registry.npmjs.org/:_authToken $NPM_TOKEN
+      - run: npm config set //registry.npmjs.org/:_authToken $NPM_TOKEN #对应ci上设置的环境变量
       - run: npm publish
 workflows:
   version: 2
@@ -67,6 +67,7 @@ workflows:
             - build
           filters:  #按条件发布 打tags
             tags:
-              only: /^v[0-9]+(\.[0-9]+)*/
+              # only: /^v[0-9]+(\.[0-9]+)*/
+              only: /^v.*/
             branches:
               ignore: /.*/  #所有分支都不部署只认tags 
